@@ -7,6 +7,14 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFPRODISPLAYBOLD.OTF">
+            <string>SFProDisplay-Bold</string>
+        </array>
+        <array key="SFPRODISPLAYREGULAR.OTF">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -48,12 +56,63 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="6xY-sB-b1J">
-                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="152" id="6xY-sB-b1J">
+                                <rect key="frame" x="0.0" y="50" width="393" height="152"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6xY-sB-b1J" id="BV6-kK-sSc">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="152"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nU3-fe-IHv">
+                                            <rect key="frame" x="24" y="24" width="71" height="104"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="71" id="Un0-zC-OST"/>
+                                                <constraint firstAttribute="height" constant="104" id="gvK-cr-UXw"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Қызғалдақтар мекені " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="typ-zO-FrG">
+                                            <rect key="frame" x="112" y="24" width="251" height="17"/>
+                                            <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                                            <color key="textColor" red="0.066666666666666666" green="0.094117647058823528" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RN3-Zf-Jls">
+                                            <rect key="frame" x="112" y="49" width="251" height="14"/>
+                                            <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                                            <color key="textColor" red="0.61176470588235299" green="0.63921568627450975" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UN0-rr-ebt">
+                                            <rect key="frame" x="112" y="87" width="80" height="26"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Play" translatesAutoresizingMaskIntoConstraints="NO" id="wQV-HL-Z1b">
+                                                    <rect key="frame" x="12" y="5" width="16" height="16"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="16" id="5ej-c0-Rop"/>
+                                                        <constraint firstAttribute="width" constant="16" id="AXr-8o-NE4"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.97254901960784312" green="0.93333333333333335" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="wQV-HL-Z1b" firstAttribute="centerY" secondItem="UN0-rr-ebt" secondAttribute="centerY" id="4Ma-PQ-Uuc"/>
+                                                <constraint firstItem="wQV-HL-Z1b" firstAttribute="leading" secondItem="UN0-rr-ebt" secondAttribute="leading" constant="12" id="7HZ-Pc-gMd"/>
+                                                <constraint firstAttribute="height" constant="26" id="jty-cJ-72z"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="nU3-fe-IHv" firstAttribute="top" secondItem="BV6-kK-sSc" secondAttribute="top" constant="24" id="33b-OL-Exo"/>
+                                        <constraint firstItem="RN3-Zf-Jls" firstAttribute="leading" secondItem="nU3-fe-IHv" secondAttribute="trailing" constant="17" id="F8j-a7-9eh"/>
+                                        <constraint firstItem="typ-zO-FrG" firstAttribute="top" secondItem="BV6-kK-sSc" secondAttribute="top" constant="24" id="NLl-SD-edC"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="typ-zO-FrG" secondAttribute="trailing" constant="10" id="Psr-ky-7I3"/>
+                                        <constraint firstItem="RN3-Zf-Jls" firstAttribute="top" secondItem="typ-zO-FrG" secondAttribute="bottom" constant="8" id="YLj-8r-27g"/>
+                                        <constraint firstItem="UN0-rr-ebt" firstAttribute="top" secondItem="RN3-Zf-Jls" secondAttribute="bottom" constant="24" id="gCo-5i-4En"/>
+                                        <constraint firstItem="typ-zO-FrG" firstAttribute="leading" secondItem="nU3-fe-IHv" secondAttribute="trailing" constant="17" id="kqO-6V-yyD"/>
+                                        <constraint firstItem="UN0-rr-ebt" firstAttribute="leading" secondItem="nU3-fe-IHv" secondAttribute="trailing" constant="17" id="pki-gu-l2O"/>
+                                        <constraint firstItem="nU3-fe-IHv" firstAttribute="leading" secondItem="BV6-kK-sSc" secondAttribute="leading" constant="24" id="tag-8G-EBN"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="RN3-Zf-Jls" secondAttribute="trailing" constant="10" id="zfg-xH-KqP"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -126,6 +185,7 @@
         <image name="FavoriteSelected" width="40" height="40"/>
         <image name="Home" width="40" height="40"/>
         <image name="HomeSelected" width="40" height="40"/>
+        <image name="Play" width="16.333333969116211" height="16"/>
         <image name="Profile" width="40" height="40"/>
         <image name="ProfileSelected" width="40" height="40"/>
         <image name="Search" width="40" height="40"/>
