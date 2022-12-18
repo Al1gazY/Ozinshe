@@ -16,6 +16,8 @@
 		3679D918294C8459009D4C96 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3679D917294C8459009D4C96 /* TabBarVC.swift */; };
 		3679D91B294DF456009D4C96 /* SFPRODISPLAYREGULAR.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 3679D91A294DF42C009D4C96 /* SFPRODISPLAYREGULAR.OTF */; };
 		3679D91C294DF459009D4C96 /* SFPRODISPLAYBOLD.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 3679D919294DF42C009D4C96 /* SFPRODISPLAYBOLD.OTF */; };
+		3679D91E294F4397009D4C96 /* FavouriteTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3679D91D294F4397009D4C96 /* FavouriteTableVC.swift */; };
+		3679D920294F44A3009D4C96 /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3679D91F294F44A3009D4C96 /* FavoriteTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		3679D917294C8459009D4C96 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		3679D919294DF42C009D4C96 /* SFPRODISPLAYBOLD.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYBOLD.OTF; sourceTree = "<group>"; };
 		3679D91A294DF42C009D4C96 /* SFPRODISPLAYREGULAR.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYREGULAR.OTF; sourceTree = "<group>"; };
+		3679D91D294F4397009D4C96 /* FavouriteTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTableVC.swift; sourceTree = "<group>"; };
+		3679D91F294F44A3009D4C96 /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 				3679D905294C7E29009D4C96 /* SceneDelegate.swift */,
 				3679D907294C7E29009D4C96 /* ViewController.swift */,
 				3679D909294C7E29009D4C96 /* Main.storyboard */,
+				3679D91D294F4397009D4C96 /* FavouriteTableVC.swift */,
+				3679D91F294F44A3009D4C96 /* FavoriteTableViewCell.swift */,
 				3679D917294C8459009D4C96 /* TabBarVC.swift */,
 				3679D90C294C7E2A009D4C96 /* Assets.xcassets */,
 				3679D90E294C7E2A009D4C96 /* LaunchScreen.storyboard */,
@@ -150,9 +156,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3679D908294C7E29009D4C96 /* ViewController.swift in Sources */,
+				3679D920294F44A3009D4C96 /* FavoriteTableViewCell.swift in Sources */,
 				3679D904294C7E29009D4C96 /* AppDelegate.swift in Sources */,
 				3679D918294C8459009D4C96 /* TabBarVC.swift in Sources */,
 				3679D906294C7E29009D4C96 /* SceneDelegate.swift in Sources */,
+				3679D91E294F4397009D4C96 /* FavouriteTableVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

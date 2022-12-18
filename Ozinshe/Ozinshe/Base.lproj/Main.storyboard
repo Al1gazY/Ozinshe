@@ -47,20 +47,20 @@
             </objects>
             <point key="canvasLocation" x="1114" y="281"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Favourite TableVC-->
         <scene sceneID="OT5-FZ-KLL">
             <objects>
-                <tableViewController id="s1r-sy-wIs" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="hcQ-A8-FjA">
+                <tableViewController id="s1r-sy-wIs" customClass="FavouriteTableVC" customModule="Ozinshe" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="hcQ-A8-FjA">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="152" id="6xY-sB-b1J">
-                                <rect key="frame" x="0.0" y="50" width="393" height="152"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavoriteCell" rowHeight="153" id="6xY-sB-b1J" customClass="FavoriteTableViewCell" customModule="Ozinshe" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="393" height="153"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6xY-sB-b1J" id="BV6-kK-sSc">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="152"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="153"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nU3-fe-IHv">
@@ -82,7 +82,7 @@
                                             <color key="textColor" red="0.61176470588235299" green="0.63921568627450975" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UN0-rr-ebt">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UN0-rr-ebt">
                                             <rect key="frame" x="112" y="87" width="80" height="26"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Play" translatesAutoresizingMaskIntoConstraints="NO" id="wQV-HL-Z1b">
@@ -92,12 +92,28 @@
                                                         <constraint firstAttribute="width" constant="16" id="AXr-8o-NE4"/>
                                                     </constraints>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Қарау" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U57-wl-FFf">
+                                                    <rect key="frame" x="32" y="5.6666666666666714" width="36" height="15"/>
+                                                    <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="12"/>
+                                                    <color key="textColor" red="0.59215686274509804" green="0.32549019607843138" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" red="0.97254901960784312" green="0.93333333333333335" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstItem="wQV-HL-Z1b" firstAttribute="centerY" secondItem="UN0-rr-ebt" secondAttribute="centerY" id="4Ma-PQ-Uuc"/>
+                                                <constraint firstItem="U57-wl-FFf" firstAttribute="centerY" secondItem="UN0-rr-ebt" secondAttribute="centerY" id="6wZ-4v-U3e"/>
                                                 <constraint firstItem="wQV-HL-Z1b" firstAttribute="leading" secondItem="UN0-rr-ebt" secondAttribute="leading" constant="12" id="7HZ-Pc-gMd"/>
+                                                <constraint firstAttribute="trailing" secondItem="U57-wl-FFf" secondAttribute="trailing" constant="12" id="CwS-4w-C0a"/>
                                                 <constraint firstAttribute="height" constant="26" id="jty-cJ-72z"/>
+                                                <constraint firstItem="U57-wl-FFf" firstAttribute="leading" secondItem="wQV-HL-Z1b" secondAttribute="trailing" constant="4" id="rt7-aq-yNy"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K2z-Fy-FaK">
+                                            <rect key="frame" x="24" y="152" width="345" height="1"/>
+                                            <color key="backgroundColor" red="0.81960784313725488" green="0.83529411764705885" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="vN4-95-6ZF"/>
                                             </constraints>
                                         </view>
                                     </subviews>
@@ -107,13 +123,22 @@
                                         <constraint firstItem="typ-zO-FrG" firstAttribute="top" secondItem="BV6-kK-sSc" secondAttribute="top" constant="24" id="NLl-SD-edC"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="typ-zO-FrG" secondAttribute="trailing" constant="10" id="Psr-ky-7I3"/>
                                         <constraint firstItem="RN3-Zf-Jls" firstAttribute="top" secondItem="typ-zO-FrG" secondAttribute="bottom" constant="8" id="YLj-8r-27g"/>
+                                        <constraint firstAttribute="bottom" secondItem="K2z-Fy-FaK" secondAttribute="bottom" id="fr8-Lh-Mk9"/>
                                         <constraint firstItem="UN0-rr-ebt" firstAttribute="top" secondItem="RN3-Zf-Jls" secondAttribute="bottom" constant="24" id="gCo-5i-4En"/>
                                         <constraint firstItem="typ-zO-FrG" firstAttribute="leading" secondItem="nU3-fe-IHv" secondAttribute="trailing" constant="17" id="kqO-6V-yyD"/>
                                         <constraint firstItem="UN0-rr-ebt" firstAttribute="leading" secondItem="nU3-fe-IHv" secondAttribute="trailing" constant="17" id="pki-gu-l2O"/>
+                                        <constraint firstItem="K2z-Fy-FaK" firstAttribute="leading" secondItem="BV6-kK-sSc" secondAttribute="leading" constant="24" id="rGM-Iz-36v"/>
                                         <constraint firstItem="nU3-fe-IHv" firstAttribute="leading" secondItem="BV6-kK-sSc" secondAttribute="leading" constant="24" id="tag-8G-EBN"/>
+                                        <constraint firstAttribute="trailing" secondItem="K2z-Fy-FaK" secondAttribute="trailing" constant="24" id="y71-Zb-jK3"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="RN3-Zf-Jls" secondAttribute="trailing" constant="10" id="zfg-xH-KqP"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="typ-zO-FrG" id="4M1-a8-dGM"/>
+                                    <outlet property="playView" destination="UN0-rr-ebt" id="yIU-dp-Ks1"/>
+                                    <outlet property="posterImageView" destination="nU3-fe-IHv" id="fzt-xp-ZVd"/>
+                                    <outlet property="yearLabel" destination="RN3-Zf-Jls" id="BQe-60-ngf"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
