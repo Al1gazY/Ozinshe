@@ -8,7 +8,7 @@
 import UIKit
 import Localize_Swift
 
-class ProfileVC: UIViewController {
+class ProfileVC: UIViewController, LanguageProtocol {
 
     @IBOutlet weak var languageLabel: UILabel!
     @IBOutlet weak var languageButton: UIButton!
@@ -24,6 +24,10 @@ class ProfileVC: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        configureViews()
+    }
+    
+    func configureViews(){
         myProfileLabel.text = "MY_PROFILE".localized()
         languageButton.setTitle("LANGUAGE".localized(), for: .normal)
         
@@ -39,10 +43,15 @@ class ProfileVC: UIViewController {
     }
     
     @IBAction func languageShow(_ sender: Any) {
-        let languageVC = storyboard?.instantiateViewController(withIdentifier: "LanguageVC")
+        let languageVC = storyboard?.instantiateViewController(withIdentifier: "LanguageVC") as! LanguageVC
         
-        languageVC!.modalPresentationStyle = .overFullScreen
-        present(languageVC!, animated: true)
+        languageVC.modalPresentationStyle = .overFullScreen
+        languageVC.delegate = self
+        present(languageVC, animated: true)
+    }
+    
+    func languageDidchange() {
+        configureViews()
     }
     
 }
