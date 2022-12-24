@@ -46,7 +46,7 @@ class ProfileVC: UIViewController, LanguageProtocol {
         let languageVC = storyboard?.instantiateViewController(withIdentifier: "LanguageVC") as! LanguageVC
         
         languageVC.modalPresentationStyle = .overFullScreen
-        languageVC.delegate = self
+        languageVC.delegate = self // for language update in profile page
         present(languageVC, animated: true)
     }
     

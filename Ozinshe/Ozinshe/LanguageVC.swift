@@ -11,13 +11,14 @@ import Localize_Swift
 protocol LanguageProtocol{
     func languageDidchange()
 }
+
 class LanguageVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var languageLabel: UILabel!
     @IBOutlet weak var backgroundView: UIView!
     
-    var delegate : LanguageProtocol
+    var delegate : LanguageProtocol?
     
     let languageArray = [["English", "en"], ["Қазақша", "kk"], ["Русский", "ru"]]
     
@@ -75,7 +76,7 @@ class LanguageVC: UIViewController, UITableViewDelegate, UITableViewDataSource, 
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         Localize.setCurrentLanguage(languageArray[indexPath.row][1])
-        delegate.languageDidchange()
+        delegate!.languageDidchange()
         dismiss(animated: true)
     }
 
