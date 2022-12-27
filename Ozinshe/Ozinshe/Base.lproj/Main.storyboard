@@ -19,7 +19,7 @@
         <!--Sign InVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SignInVC" customModule="Ozinshe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInVC" id="BYZ-38-t0r" customClass="SignInVC" customModule="Ozinshe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,8 +77,8 @@
                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                 <connections>
-                                    <action selector="TextFieldEditingDidBegin:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="vBX-J1-CnE"/>
-                                    <action selector="TextFieldEditingDidEnd:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="bHf-P3-xU8"/>
+                                    <action selector="TextFieldEditingDidBegin:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="dA8-wL-4uO"/>
+                                    <action selector="TextFieldEditingDidBegin:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="fQJ-hl-t67"/>
                                 </connections>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Password" translatesAutoresizingMaskIntoConstraints="NO" id="yXJ-eq-fmW">
@@ -529,7 +529,7 @@
         <!--Tab BarVC-->
         <scene sceneID="J18-c8-u8l">
             <objects>
-                <tabBarController storyboardIdentifier="Main" id="SQL-3B-q45" customClass="TabBarVC" customModule="Ozinshe" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarVC" id="SQL-3B-q45" customClass="TabBarVC" customModule="Ozinshe" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5E7-Pd-tSG">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

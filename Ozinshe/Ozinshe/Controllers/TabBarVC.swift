@@ -12,6 +12,10 @@ class TabBarVC: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+    }
+    
+    override func viewWillLayoutSubviews() {
+        
         let homeSelected = UIImage(named: "HomeSelected")?.withRenderingMode(.alwaysOriginal)
         let searchSelected = UIImage(named: "SearchSelected")?.withRenderingMode(.alwaysOriginal)
         let favoriteSelected = UIImage(named: "FavoriteSelected")?.withRenderingMode(.alwaysOriginal)
@@ -21,7 +25,6 @@ class TabBarVC: UITabBarController {
         tabBar.items?[1].selectedImage = searchSelected
         tabBar.items?[2].selectedImage = favoriteSelected
         tabBar.items?[3].selectedImage = profileSelected
-
     }
 
 }
