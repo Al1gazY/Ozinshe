@@ -59,8 +59,10 @@ class SignInVC: UIViewController {
     }
     
     @IBAction func signIn(_ sender: Any) {
-        let email = emailTextField
-        let password = passwordTextField
+        let email = emailTextField.text!
+        let password = passwordTextField.text!
+        
+        if email.isEmpty || password.isEmpty { return }
         
         SVProgressHUD.show()
         
@@ -81,9 +83,26 @@ class SignInVC: UIViewController {
                 print("JSON: \(json)")
                 
                 if let token = json["accessToken"].string{
-                    Storage.
+                    Storage.sharedInstance.accessToken = token
+                    UserDefaults.standard.set(token, forKey: "accessToken")
+                    self.startApp()
+                } else {
+                    SVProgressHUD.showError(withStatus: "CONNECTION_ERROR".localized())
                 }
+            } else {
+                var ErrorString = "CONNECTION_ERROR".localized()
+                if let sCode = responce.response?.statusCode{
+                    ErrorString = ErrorString + "\(sCode)"
+                }
+                ErrorString = ErrorString + " \(resultString)"
+                SVProgressHUD.showError(withStatus: "\(ErrorString)")
             }
         }
+    }
+    
+    func startApp(){
+        let tableVC = self.storyboard?.instantiateViewController(withIdentifier: "TabBarVC")
+        tableVC?.modalPresentationStyle = .fullScreen
+        self.present(tableVC!, animated: true)
     }
 }

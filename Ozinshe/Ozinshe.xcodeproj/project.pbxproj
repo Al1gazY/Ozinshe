@@ -18,6 +18,7 @@
 		3679D91E294F4397009D4C96 /* FavouriteTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3679D91D294F4397009D4C96 /* FavouriteTableVC.swift */; };
 		3679D920294F44A3009D4C96 /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3679D91F294F44A3009D4C96 /* FavoriteTableViewCell.swift */; };
 		36972FE92959F9E5000D1498 /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36972FE82959F9E5000D1498 /* Urls.swift */; };
+		36972FEB2959FF55000D1498 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36972FEA2959FF55000D1498 /* Storage.swift */; };
 		36F685A12950D30F00D8866C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36F685A32950D30F00D8866C /* Localizable.strings */; };
 		36F685A72951D78100D8866C /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F685A62951D78100D8866C /* ProfileVC.swift */; };
 		36F685A92951DBA500D8866C /* LanguageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F685A82951DBA500D8866C /* LanguageVC.swift */; };
@@ -41,6 +42,7 @@
 		3679D91D294F4397009D4C96 /* FavouriteTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTableVC.swift; sourceTree = "<group>"; };
 		3679D91F294F44A3009D4C96 /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
 		36972FE82959F9E5000D1498 /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
+		36972FEA2959FF55000D1498 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		36F685A22950D30F00D8866C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		36F685A42950D34A00D8866C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		36F685A52950D35C00D8866C /* kk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = kk; path = kk.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 		36F685AE2958AA6500D8866C /* SharedInstance */ = {
 			isa = PBXGroup;
 			children = (
+				36972FEA2959FF55000D1498 /* Storage.swift */,
 			);
 			path = SharedInstance;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36F685A92951DBA500D8866C /* LanguageVC.swift in Sources */,
+				36972FEB2959FF55000D1498 /* Storage.swift in Sources */,
 				3679D920294F44A3009D4C96 /* FavoriteTableViewCell.swift in Sources */,
 				36F685A72951D78100D8866C /* ProfileVC.swift in Sources */,
 				36F685B62958AB4100D8866C /* SignInVC.swift in Sources */,

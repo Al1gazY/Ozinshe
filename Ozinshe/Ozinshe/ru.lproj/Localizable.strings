@@ -7,3 +7,4 @@
 */
 "MY_PROFILE" = "Мой профиль";
 "LANGUAGE" = "Язык";
+"CONNECTION_ERROR" = "Ошибка соединения";
