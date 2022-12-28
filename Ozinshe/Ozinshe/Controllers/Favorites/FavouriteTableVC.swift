@@ -6,10 +6,13 @@
 //
 
 import UIKit
+import Alamofire
+import SVProgressHUD
+import SwiftyJSON
 
 class FavouriteTableVC: UITableViewController {
-    
-    let array = ["preview1", "preview2", "preview3"]
+
+    var favorites:[Movie] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,22 +28,21 @@ class FavouriteTableVC: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return array.count
+        return 1
     }
 
-    
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FavoriteCell", for: indexPath) as! FavoriteTableViewCell
 
-        cell.setData(image: array[indexPath.row])
 
         return cell
     }
-    
+
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 153
     }
-    
+
 
     /*
     // Override to support conditional editing of the table view.
@@ -58,7 +60,7 @@ class FavouriteTableVC: UITableViewController {
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        }
     }
     */
 

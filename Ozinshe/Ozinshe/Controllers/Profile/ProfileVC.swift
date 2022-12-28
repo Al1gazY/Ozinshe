@@ -50,6 +50,13 @@ class ProfileVC: UIViewController, LanguageProtocol {
         present(languageVC, animated: true)
     }
     
+    @IBAction func logout(_ sender: Any) {
+        let logoutVC = storyboard?.instantiateViewController(withIdentifier: "LogOutVC") as! LogOutVC
+        
+        logoutVC.modalPresentationStyle = .overFullScreen
+        
+        present(logoutVC, animated: true, completion: nil)
+    }
     func languageDidchange() {
         configureViews()
     }

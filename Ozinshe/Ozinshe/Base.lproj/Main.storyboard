@@ -299,7 +299,7 @@
             </objects>
             <point key="canvasLocation" x="2040.4580152671756" y="930.98591549295782"/>
         </scene>
-        <!--ProfileVC-->
+        <!--Профиль-->
         <scene sceneID="W9o-MB-IYZ">
             <objects>
                 <viewController id="TjN-MM-Cy4" customClass="ProfileVC" customModule="Ozinshe" customModuleProvider="target" sceneMemberID="viewController">
@@ -394,7 +394,14 @@
                             <constraint firstItem="LQL-fw-DIA" firstAttribute="leading" secondItem="fcQ-lW-SDR" secondAttribute="leading" id="vfb-RK-Tyj"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="9WW-TO-v1t"/>
+                    <navigationItem key="navigationItem" title="Профиль" id="9WW-TO-v1t">
+                        <barButtonItem key="rightBarButtonItem" image="Exit" id="UeL-AD-QAE">
+                            <color key="tintColor" red="1" green="0.25098039215686274" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="logout:" destination="TjN-MM-Cy4" id="8gU-6G-Ft3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="languageButton" destination="Iab-yW-hHI" id="1fg-kP-q1x"/>
                         <outlet property="languageLabel" destination="3we-KY-pVR" id="1NL-KG-qb4"/>
@@ -510,6 +517,103 @@
             </objects>
             <point key="canvasLocation" x="2858.7786259541986" y="1586.6197183098593"/>
         </scene>
+        <!--Log OutVC-->
+        <scene sceneID="iyZ-Ro-nvc">
+            <objects>
+                <viewController storyboardIdentifier="LogOutVC" id="cly-pZ-4df" customClass="LogOutVC" customModule="Ozinshe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZG6-SW-E25">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="smT-cH-LNn">
+                                <rect key="frame" x="0.0" y="549" width="393" height="303"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZXt-cX-a0U">
+                                        <rect key="frame" x="164.66666666666666" y="21" width="64" height="5"/>
+                                        <color key="backgroundColor" red="0.81960784313725488" green="0.83529411764705885" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="5" id="uIv-IW-vCf"/>
+                                            <constraint firstAttribute="width" constant="64" id="vfy-tC-bRi"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Шығу" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gc8-fs-VnK">
+                                        <rect key="frame" x="24" y="57.999999999999993" width="66" height="28.666666666666664"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
+                                        <color key="textColor" red="0.066666666666666666" green="0.094117647058823528" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сіз шынымен аккаунтыныздан " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4CZ-V9-RXa">
+                                        <rect key="frame" x="24" y="94.666666666666629" width="345" height="20"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
+                                        <color key="textColor" red="0.61176470588235299" green="0.63921568627450975" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DE7-Vh-lKg">
+                                        <rect key="frame" x="24" y="146.66666666666663" width="345" height="56"/>
+                                        <color key="backgroundColor" red="0.49411764705882355" green="0.1764705882352941" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="JCz-fC-S54"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Иә, шығу">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="logout:" destination="cly-pZ-4df" eventType="touchUpInside" id="JXl-z9-IUj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19U-Ip-Z5H">
+                                        <rect key="frame" x="24" y="210.66666666666663" width="345" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="jZh-aN-4Vj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Жоқ">
+                                            <color key="titleColor" red="0.32941176470588235" green="0.082352941176470587" blue="0.77647058823529413" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancel:" destination="cly-pZ-4df" eventType="touchUpInside" id="YyW-UH-79V"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="ZXt-cX-a0U" firstAttribute="centerX" secondItem="smT-cH-LNn" secondAttribute="centerX" id="0aR-Py-arU"/>
+                                    <constraint firstItem="DE7-Vh-lKg" firstAttribute="top" secondItem="4CZ-V9-RXa" secondAttribute="bottom" constant="32" id="6NM-HS-zTg"/>
+                                    <constraint firstAttribute="trailing" secondItem="DE7-Vh-lKg" secondAttribute="trailing" constant="24" id="7X8-xd-jAU"/>
+                                    <constraint firstItem="4CZ-V9-RXa" firstAttribute="top" secondItem="gc8-fs-VnK" secondAttribute="bottom" constant="8" id="DRA-wd-YDU"/>
+                                    <constraint firstAttribute="height" constant="303" id="ECY-vU-GTZ"/>
+                                    <constraint firstItem="gc8-fs-VnK" firstAttribute="leading" secondItem="smT-cH-LNn" secondAttribute="leading" constant="24" id="JOg-2V-p5h"/>
+                                    <constraint firstAttribute="trailing" secondItem="4CZ-V9-RXa" secondAttribute="trailing" constant="24" id="Ju5-bl-Hfh"/>
+                                    <constraint firstItem="DE7-Vh-lKg" firstAttribute="leading" secondItem="smT-cH-LNn" secondAttribute="leading" constant="24" id="OAC-vI-Xse"/>
+                                    <constraint firstItem="4CZ-V9-RXa" firstAttribute="leading" secondItem="smT-cH-LNn" secondAttribute="leading" constant="24" id="n7Y-4D-1P4"/>
+                                    <constraint firstAttribute="trailing" secondItem="19U-Ip-Z5H" secondAttribute="trailing" constant="24" id="nl4-jV-TuC"/>
+                                    <constraint firstItem="19U-Ip-Z5H" firstAttribute="top" secondItem="DE7-Vh-lKg" secondAttribute="bottom" constant="8" id="oki-Pc-E4f"/>
+                                    <constraint firstItem="gc8-fs-VnK" firstAttribute="top" secondItem="smT-cH-LNn" secondAttribute="top" constant="58" id="re2-1E-2yg"/>
+                                    <constraint firstItem="ZXt-cX-a0U" firstAttribute="top" secondItem="smT-cH-LNn" secondAttribute="top" constant="21" id="reW-9p-5ZG"/>
+                                    <constraint firstItem="19U-Ip-Z5H" firstAttribute="leading" secondItem="smT-cH-LNn" secondAttribute="leading" constant="24" id="t12-a2-YcG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bXl-vX-MKf"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.29737621585264901" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="smT-cH-LNn" secondAttribute="trailing" id="FOn-Ip-nCO"/>
+                            <constraint firstAttribute="bottom" secondItem="smT-cH-LNn" secondAttribute="bottom" id="JyM-t7-6nu"/>
+                            <constraint firstItem="smT-cH-LNn" firstAttribute="leading" secondItem="bXl-vX-MKf" secondAttribute="leading" id="VOs-y2-z8q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="background" destination="smT-cH-LNn" id="0K3-Qr-Uhs"/>
+                        <outlet property="logoutbutton" destination="DE7-Vh-lKg" id="10V-Rc-gNi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7vB-9W-gnd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3617.5572519083967" y="1586.6197183098593"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="u5P-57-qAW">
             <objects>
@@ -568,7 +672,7 @@
         <!--Navigation Controller-->
         <scene sceneID="t9u-Zb-nSv">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d4V-UW-D3V" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="SingInNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="d4V-UW-D3V" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rGD-9U-Vhk">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -584,17 +688,10 @@
             <point key="canvasLocation" x="-1170.2290076335878" y="641.54929577464793"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="IQi-3J-nxE">
-            <size key="intrinsicContentSize" width="139" height="20"/>
-        </designable>
-        <designable name="dbi-b5-9oQ">
-            <size key="intrinsicContentSize" width="83" height="21"/>
-        </designable>
-    </designables>
     <resources>
         <image name="Avatar" width="104" height="104"/>
         <image name="Check" width="24" height="24"/>
+        <image name="Exit" width="24" height="24"/>
         <image name="Favorite" width="40" height="40"/>
         <image name="FavoriteSelected" width="40" height="40"/>
         <image name="Home" width="40" height="40"/>
