@@ -8,3 +8,15 @@
 "MY_PROFILE" = "Мой профиль";
 "LANGUAGE" = "Язык";
 "CONNECTION_ERROR" = "Ошибка соединения";
+"ENTER" = "Войти";
+"HELLO" = "Привет!";
+"LOGIN_LABEL" = "Войдите в свою учетную запись";
+"SECONDPASS" = "Повторите пароль";
+"PASS" = "Пароль";
+"NOPASS" = "Нет аккаунта?";
+"REGISTER" = "Регистрация";
+"YOURPASS" = "Ваш пароль";
+"YOUREMAIL" = "Ваш email";
+"PASSNOTEQUAL" = "Пароли не совпадают";
+"HAVEACC" = "У вас есть аккаунт?";
+"FILLIN" = "Заполните данные";

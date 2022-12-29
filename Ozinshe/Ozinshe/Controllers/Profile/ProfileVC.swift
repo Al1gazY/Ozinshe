@@ -7,9 +7,12 @@
 
 import UIKit
 import Localize_Swift
+import Alamofire
+import SwiftyJSON
 
 class ProfileVC: UIViewController, LanguageProtocol {
 
+    @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var languageLabel: UILabel!
     @IBOutlet weak var languageButton: UIButton!
     @IBOutlet weak var myProfileLabel: UILabel!
@@ -25,6 +28,23 @@ class ProfileVC: UIViewController, LanguageProtocol {
     
     override func viewWillAppear(_ animated: Bool) {
         configureViews()
+        
+        let accessToken = Storage.sharedInstance.accessToken
+        let headers: HTTPHeaders = [.authorization(bearerToken: accessToken)]
+        
+        AF.request("http://api.ozinshe.com/core/V1/user/profile", headers: headers).response { response in
+            
+            switch response.result{
+                
+            case .success(let value):
+                let json = JSON(value)
+                self.emailLabel.text = "\(json["user"]["email"])"
+                
+            case .failure(let error):
+                print(error)
+            }
+        }
+        
     }
     
     func configureViews(){
@@ -62,3 +82,4 @@ class ProfileVC: UIViewController, LanguageProtocol {
     }
     
 }
+

@@ -8,3 +8,15 @@
 "MY_PROFILE" = "My profile";
 "LANGUAGE" = "Language";
 "CONNECTION_ERROR" = "Connection error";
+"ENTER" = "Log In";
+"HELLO" = "Hello!";
+"LOGIN_LABEL" = "Log in to your account";
+"SECONDPASS" = "Repeat the password";
+"PASS" = "Password";
+"NOPASS" = "Do not have an account?";
+"REGISTER" = "Sign Up";
+"YOURPASS" = "Your password";
+"YOUREMAIL" = "Your email";
+"PASSNOTEQUAL" = "Passwords don't match";
+"HAVEACC" = "Do you have an account?";
+"FILLIN" = "Fill in the data";
