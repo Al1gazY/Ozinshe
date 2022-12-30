@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProDisplay-Bold.ttf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+        <array key="SFProDisplay-Regular.ttf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="159" id="TCb-GE-mVa" customClass="MovieTableViewCell" customModule="Ozinshe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="159"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TCb-GE-mVa" id="Ija-tq-GsB">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="159"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jhs-4y-1TG">
+                        <rect key="frame" x="24" y="24" width="71" height="104"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="104" id="WOb-B4-g9e"/>
+                            <constraint firstAttribute="width" constant="71" id="tNb-xb-J9G"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Қызғалдақтар мекені " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ehi-5o-9Zv">
+                        <rect key="frame" x="112.00000000000001" y="24" width="148.33333333333337" height="17"/>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                        <color key="textColor" red="0.066666666666666666" green="0.094117647058823528" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oX6-ik-vQz">
+                        <rect key="frame" x="112" y="49" width="28.333333333333343" height="14.333333333333336"/>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                        <color key="textColor" red="0.61176470588235299" green="0.63921568627450975" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="46K-cr-LHt">
+                        <rect key="frame" x="112" y="87.333333333333329" width="79.666666666666686" height="26"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Play" translatesAutoresizingMaskIntoConstraints="NO" id="8P3-nm-s9d">
+                                <rect key="frame" x="12" y="5" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="1yE-vh-FUs"/>
+                                    <constraint firstAttribute="height" constant="16" id="yHj-IV-Jsm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Қарау" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ykF-xU-liI">
+                                <rect key="frame" x="31.999999999999996" y="6.0000000000000009" width="35.666666666666657" height="14.333333333333336"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="12"/>
+                                <color key="textColor" red="0.59215686274509804" green="0.32549019607843138" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97254901960784312" green="0.93333333333333335" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ykF-xU-liI" secondAttribute="trailing" constant="12" id="3xz-yM-HOH"/>
+                            <constraint firstAttribute="height" constant="26" id="7JQ-zE-sRl"/>
+                            <constraint firstItem="8P3-nm-s9d" firstAttribute="leading" secondItem="46K-cr-LHt" secondAttribute="leading" constant="12" id="9Nj-uY-Ae6"/>
+                            <constraint firstItem="ykF-xU-liI" firstAttribute="centerY" secondItem="46K-cr-LHt" secondAttribute="centerY" id="Ef0-JT-kFF"/>
+                            <constraint firstItem="ykF-xU-liI" firstAttribute="leading" secondItem="8P3-nm-s9d" secondAttribute="trailing" constant="4" id="SBD-ah-qtf"/>
+                            <constraint firstItem="8P3-nm-s9d" firstAttribute="centerY" secondItem="46K-cr-LHt" secondAttribute="centerY" id="gV6-WS-0d9"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ehi-5o-9Zv" firstAttribute="top" secondItem="Ija-tq-GsB" secondAttribute="top" constant="24" id="5li-Q5-2Sm"/>
+                    <constraint firstItem="Ehi-5o-9Zv" firstAttribute="leading" secondItem="jhs-4y-1TG" secondAttribute="trailing" constant="17" id="6dA-4S-5TL"/>
+                    <constraint firstItem="46K-cr-LHt" firstAttribute="leading" secondItem="jhs-4y-1TG" secondAttribute="trailing" constant="17" id="8wd-vI-wcE"/>
+                    <constraint firstItem="46K-cr-LHt" firstAttribute="top" secondItem="oX6-ik-vQz" secondAttribute="bottom" constant="24" id="EXg-dP-dvp"/>
+                    <constraint firstItem="jhs-4y-1TG" firstAttribute="leading" secondItem="Ija-tq-GsB" secondAttribute="leading" constant="24" id="h3L-nU-Vmf"/>
+                    <constraint firstItem="oX6-ik-vQz" firstAttribute="top" secondItem="Ehi-5o-9Zv" secondAttribute="bottom" constant="8" id="n9Y-vc-B1m"/>
+                    <constraint firstItem="oX6-ik-vQz" firstAttribute="leading" secondItem="jhs-4y-1TG" secondAttribute="trailing" constant="17" id="w7X-OA-WdF"/>
+                    <constraint firstItem="jhs-4y-1TG" firstAttribute="top" secondItem="Ija-tq-GsB" secondAttribute="top" constant="24" id="xjm-EM-0RI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="Ehi-5o-9Zv" id="MQ2-9L-vWF"/>
+                <outlet property="playView" destination="46K-cr-LHt" id="od3-5Q-8KI"/>
+                <outlet property="posterImageView" destination="jhs-4y-1TG" id="6SY-nQ-jpz"/>
+                <outlet property="yearLabel" destination="oX6-ik-vQz" id="SqH-iU-Fmg"/>
+            </connections>
+            <point key="canvasLocation" x="287.78625954198475" y="101.05633802816902"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Play" width="16.333333969116211" height="16"/>
+    </resources>
+</document>
