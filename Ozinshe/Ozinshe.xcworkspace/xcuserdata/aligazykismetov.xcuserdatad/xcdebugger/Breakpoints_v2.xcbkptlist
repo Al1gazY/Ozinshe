@@ -3,4 +3,54 @@
    uuid = "D899D796-9FD3-45E1-9774-309ABA55B5E9"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BB33A055-8061-4E1B-B31B-446EFA36189F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Ozinshe/Controllers/Search/SearchVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "202"
+            endingLineNumber = "202"
+            landmarkName = "downloadCategories()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BB33A055-8061-4E1B-B31B-446EFA36189F - 82aa26d8948b23c5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Ozinshe.SearchVC.downloadCategories() -&gt; ()"
+                  moduleName = "Ozinshe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aligazykismetov/Documents/iOS%20Developer/Course%20of%20Olzhas/Ozinshe/Ozinshe/Ozinshe/Controllers/Search/SearchVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "202"
+                  endingLineNumber = "202"
+                  offsetFromSymbolStart = "618">
+               </Location>
+               <Location
+                  uuid = "BB33A055-8061-4E1B-B31B-446EFA36189F - 83c0df6461d658a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Foundation.Data, Alamofire.AFError&gt;) -&gt; () in Ozinshe.SearchVC.downloadCategories() -&gt; ()"
+                  moduleName = "Ozinshe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aligazykismetov/Documents/iOS%20Developer/Course%20of%20Olzhas/Ozinshe/Ozinshe/Ozinshe/Controllers/Search/SearchVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "204"
+                  endingLineNumber = "204"
+                  offsetFromSymbolStart = "211">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
