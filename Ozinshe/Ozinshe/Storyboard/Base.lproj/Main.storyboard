@@ -700,10 +700,10 @@
             </objects>
             <point key="canvasLocation" x="4544.2748091603053" y="1586.6197183098593"/>
         </scene>
-        <!--View Controller-->
+        <!--Main PageVC-->
         <scene sceneID="u5P-57-qAW">
             <objects>
-                <viewController id="Hhf-lj-Kcd" sceneMemberID="viewController">
+                <viewController id="Hhf-lj-Kcd" customClass="MainPageVC" customModule="Ozinshe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cCs-cU-Baf">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -712,11 +712,11 @@
                                 <rect key="frame" x="0.0" y="103" width="393" height="666"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mainCell" rowHeight="290" id="s6b-oA-4mf">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="290"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="mainCell" rowHeight="288" id="s6b-oA-4mf" customClass="MainTableViewCell" customModule="Ozinshe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="288"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="s6b-oA-4mf" id="6YM-Ed-1se">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="290"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="288"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Телехикая" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cB9-B9-2Xr">
@@ -734,8 +734,8 @@
                                                     <color key="textColor" red="0.70196078431372544" green="0.46274509803921571" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="FeB-kR-VWi">
-                                                    <rect key="frame" x="0.0" y="57.333333333333329" width="393" height="222.66666666666669"/>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="FeB-kR-VWi">
+                                                    <rect key="frame" x="0.0" y="57.333333333333329" width="393" height="220.66666666666669"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="12" minimumInteritemSpacing="12" id="6Ue-ye-LRW">
                                                         <size key="itemSize" width="112" height="219.5"/>
@@ -745,10 +745,10 @@
                                                     </collectionViewFlowLayout>
                                                     <cells>
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="4Hg-wr-wn0">
-                                                            <rect key="frame" x="24" y="0.0" width="112" height="219.66666666666666"/>
+                                                            <rect key="frame" x="24" y="0.0" width="112" height="218.66666666666666"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="JJA-og-Kmt">
-                                                                <rect key="frame" x="0.0" y="0.0" width="112" height="219.66666666666666"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="112" height="218.66666666666666"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1000" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CI7-zb-pTw">
@@ -765,7 +765,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" tag="1002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Мультсериал" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2K-J0-kHn">
-                                                                        <rect key="frame" x="0.0" y="204.66666666666666" width="112" height="15"/>
+                                                                        <rect key="frame" x="0.0" y="204.66666666666666" width="112" height="14"/>
                                                                         <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
                                                                         <color key="textColor" red="0.61176470588235299" green="0.63921568627450975" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
@@ -800,6 +800,10 @@
                                                 <constraint firstItem="QHf-Eh-tDq" firstAttribute="leading" secondItem="cB9-B9-2Xr" secondAttribute="trailing" constant="10" id="xIt-El-0Og"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="categoryNameLabel" destination="cB9-B9-2Xr" id="J3P-mm-9Ek"/>
+                                            <outlet property="collectionView" destination="FeB-kR-VWi" id="nHX-us-zHj"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -814,6 +818,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="W1U-bi-2If"/>
+                    <connections>
+                        <outlet property="tableView" destination="dfR-KW-INE" id="36R-8A-ubR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EVn-Nf-HG3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
