@@ -1,7 +1,7 @@
 # Ozinshe
 <img width="233" alt="screenshot_2023-01-08_at_20_26_27 7PY6c" src="https://user-images.githubusercontent.com/99682480/211201684-e7bcf9b7-016f-42f2-833b-46bfa380548a.png">
 
-Ozinshe is a mobile application that allows users to watch Kazakh movies on their device. 
+Ozinshe is a mobile application that allows users to watch Kazakh movies on their device. Design was taken from Figma.
 
 ## CocoaPods
 - Alamofire
